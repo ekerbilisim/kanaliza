@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kanalizasyon Hizmetleri</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1193d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+        .form-select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative min-h-screen w-full">
+<header class="bg-background-light dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-10 border-b border-background-dark/10 dark:border-background-light/10">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-4 text-slate-800 dark:text-slate-200">
+<svg class="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v4h-2zm0 6h2v2h-2z"></path></svg>
+<h1 class="text-xl font-bold text-slate-900 dark:text-white">Kanalizasyon Hizmetleri</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Hizmetler</a>
+<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Hakkımızda</a>
+<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">İletişim</a>
+</nav>
+<button class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors">
+                        Teklif Al
+                    </button>
+</div>
+</div>
+</header>
+<main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+<div class="lg:col-span-3">
+<div class="space-y-8">
+<div>
+<h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">İletişime Geçin ve Randevu Alın</h2>
+<p class="mt-4 text-lg text-slate-600 dark:text-slate-400">Her türlü soru, talep ve randevu için bizimle iletişime geçin. Uzman ekibimiz en kısa sürede size yardımcı olacaktır.</p>
+</div>
+<form action="#" class="space-y-6 bg-background-light dark:bg-background-dark/50 p-6 rounded-xl border border-background-dark/10 dark:border-background-light/10" method="POST">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300" for="first-name">Ad</label>
+<div class="mt-1">
+<input class="block w-full rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-200 shadow-sm focus:border-primary focus:ring-primary sm:text-sm h-12 px-4" id="first-name" name="first-name" placeholder="Adınız" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300" for="last-name">Soyad</label>
+<div class="mt-1">
+<input class="block w-full rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-200 shadow-sm focus:border-primary focus:ring-primary sm:text-sm h-12 px-4" id="last-name" name="last-name" placeholder="Soyadınız" type="text"/>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300" for="phone">Telefon Numarası</label>
+<div class="mt-1">
+<input class="block w-full rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-200 shadow-sm focus:border-primary focus:ring-primary sm:text-sm h-12 px-4" id="phone" name="phone" placeholder="+90 555 123 4567" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300" for="address">Adres</label>
+<div class="mt-1">
+<textarea class="block w-full rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-200 shadow-sm focus:border-primary focus:ring-primary sm:text-sm p-4" id="address" name="address" placeholder="Adresiniz" rows="3"></textarea>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300" for="service">Talep Edilen Hizmet</label>
+<div class="mt-1">
+<select class="form-select block w-full rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-200 shadow-sm focus:border-primary focus:ring-primary sm:text-sm h-12 px-4" id="service" name="service">
+<option>Hizmet Seçin</option>
+<option>Kanal Tıkanıklığı Açma</option>
+<option>Gider Görüntüleme</option>
+<option>Basınçlı Yıkama</option>
+</select>
+</div>
+</div>
+<div class="rounded-xl border border-background-dark/10 dark:border-background-light/10 p-4">
+<div class="flex items-center justify-between mb-4">
+<button class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300" type="button">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" fill-rule="evenodd"></path></svg>
+</button>
+<h3 class="text-sm font-semibold text-slate-900 dark:text-white">Haziran 2024</h3>
+<button class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300" type="button">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+<div class="grid grid-cols-7 text-center text-xs text-slate-500 dark:text-slate-400">
+<span class="py-2">Pzt</span><span class="py-2">Sal</span><span class="py-2">Çar</span><span class="py-2">Per</span><span class="py-2">Cum</span><span class="py-2">Cmt</span><span class="py-2">Paz</span>
+</div>
+<div class="grid grid-cols-7 mt-1 text-sm">
+<span class="col-start-6 text-center py-2 text-slate-900 dark:text-white">1</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">2</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">3</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">4</span>
+<button class="text-center py-2 rounded-full mx-auto w-9 h-9 flex items-center justify-center bg-primary text-white font-semibold" type="button">5</button>
+<span class="text-center py-2 text-slate-900 dark:text-white">6</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">7</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">8</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">9</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">10</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">11</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">12</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">13</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">14</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">15</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">16</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">17</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">18</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">19</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">20</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">21</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">22</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">23</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">24</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">25</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">26</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">27</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">28</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">29</span>
+<span class="text-center py-2 text-slate-900 dark:text-white">30</span>
+</div>
+</div>
+<div class="flex justify-end">
+<button class="w-full sm:w-auto flex justify-center py-3 px-6 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" type="submit">
+                                    Randevu Oluştur
+                                </button>
+</div>
+</form>
+</div>
+</div>
+<div class="lg:col-span-2">
+<div class="sticky top-24 p-6 bg-background-light dark:bg-background-dark/50 rounded-xl border border-background-dark/10 dark:border-background-light/10">
+<h3 class="text-xl font-semibold text-slate-900 dark:text-white">İletişim Bilgilerimiz</h3>
+<p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Bize aşağıdaki kanallardan ulaşabilirsiniz.</p>
+<ul class="mt-6 space-y-5" role="list">
+<li class="flex space-x-3">
+<div class="flex-shrink-0">
+<svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<span class="text-sm text-slate-700 dark:text-slate-300">Merkez Mah. Atatürk Cad. No:123, 34000, İstanbul</span>
+</li>
+<li class="flex space-x-3">
+<div class="flex-shrink-0">
+<svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<span class="text-sm text-slate-700 dark:text-slate-300">info@kanalizasyonhizmetleri.com</span>
+</li>
+<li class="flex space-x-3">
+<div class="flex-shrink-0">
+<svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.211-.998-.582-1.35L19.5 15.75M2.25 6.75c0-8.284 6.716-15 15-15h2.25a2.25 2.25 0 012.25 2.25v1.372c0 .516-.211.998-.582 1.35L19.5 8.25m-15 0A23.953 23.953 0 0021 18.75m-15 0a23.953 23.953 0 0115-12" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<span class="text-sm text-slate-700 dark:text-slate-300">+90 552 724 00 09</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
